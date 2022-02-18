@@ -1,0 +1,84 @@
+@media (max-width : 425px){
+    body{
+        font-size: 4px;
+    }
+    section{
+        min-height: 576px;
+    }
+    main{
+        min-height: 576px;
+    }
+    .wrapLine > div{
+        min-height: 576px;
+    }
+    .titleHeadLine{
+    }
+}
+
+@media (min-width : 425px){
+    body{
+        font-size: 6px;
+    }
+    section{
+        min-height: 576px;
+    }
+    main{
+        min-height: 576px;
+    }
+    .wrapLine > div{
+        min-height: 576px;
+    }
+    .titleHeadLine{
+    }
+}
+
+@media (min-width : 768px){
+    body{
+        font-size: 8px;
+    }
+
+}
+
+@media (min-width : 1194px){
+    
+    body{
+        font-size: 10px;
+    }
+
+    .wrap{
+        width: 100%;
+    }
+    .headerWrap{
+        width: 100%;
+    }
+
+    section{
+        min-height: 720px;
+    }
+    main{
+        min-height: 720px;
+    }
+    .wrapLine > div{
+        min-height: 720px;
+    }
+    .titleHeadLine{
+    }
+}
+
+@media (min-width : 1900px){
+    body{
+        font-size: 12px;
+    }
+}
+@media (min-width : 2500px){
+    body{
+        font-size: 16px;
+    }
+}
+@media (min-width : 3800px){
+    body{
+        font-size: 24px;
+    }
+}
+
+

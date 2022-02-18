@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    transition: font-size 0.1s, width 0.5s, height 0.5s;
+}
+
+svg.loading{
+    transform-origin: 50% 65%;
+}
+  
+svg.loading polygon{
+stroke-dasharray: 17;
+animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+}
+
+@keyframes dash{
+to{
+    stroke-dashoffset: 136;
+}}
+
+@keyframes rotate{
+100%{
+    transform: rotate(360deg);
+}}
+
+
+/* 클래스 */
+
+.cb{
+    color: #212121;
+}
+.cw{
+    color: #F3F3F3;
+}
+.cp{
+    color: #FFDD00;
+}
+
+.bcb{
+    background: #2D2D2D;
+}
+.bcw{
+    background: #E9E9E9;
+}
+.bcp{
+    background: #FFDD00;
+}
+
+h1{
+    font-size: 7.4em;
+}
+h2{
+    font-size: 6.4em;
+}
+h3{
+    font-size: 5.4em;
+}
+h4{
+    font-size: 4.4em;
+}
+h5{
+    font-size: 3.4em;
+}
+h6{
+    font-size: 2.4em;
+}
+p{
+    font-size: 2.0em;
+}
+span{
+    font-size: 1.6em;
+}
+
+.wmt{
+    margin-top: 3%;
+}
+.wml{
+    margin-left: 5%;
+}
+.wmr{
+    margin-right: 5%;
+}
+.wmb{
+    margin-bottom: 5%;
+}
+
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+.wat{
+    top: 5%;
+}
+.wal{
+    left: 5%;
+}
+.war{
+    right: 5%;
+}
+.wab{
+    bottom: 5%;
+}
+
+.ilw{
+    width: 3px;
+}
+.ilh{
+    height: 3px;
+}
+
+.df{
+    display: flex;
+}
+.df_dc{
+    flex-direction: column;
+}
+.df_jb{
+    justify-content: space-between;
+}
+.df_ja{
+    justify-content: space-around;
+}
+.df_jc{
+    justify-content: center;
+}
+.df_as{
+    align-items: flex-start;
+}
+.df_ae{
+    align-items: flex-end;
+}
+.df_ac{
+    align-items: center;
+}
+
+
+
+/* 공통 */
+
+
+body{
+    font-size: 10px;
+}
+
+
+#frame{
+    width: 100%;
+    z-index: 10;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    /* padding: 44px 20px; */
+    padding: 44px 2%;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapTb{
+    width: 100%;
+}
+.wrapMb{
+    width: 100%;
+}
+
+.wrapLine{
+    /* width: 1194px; */
+    height: 100%;
+    /* padding: 44px 20px; */
+    padding: 44px 0;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapLine > div{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    /* margin: 0 10px; */
+    background-color: #3C3C3C;
+    top: 0;
+}
+.wrapLine .leftLine{
+    left: 0;
+}
+.wrapLine .rightLine{
+    right: 0;
+}
+
+.parallax{
+    transition: transform 0.5s;
+}
+
+.backLine{
+    width: 100%;
+    z-index: 1;
+}
+.backLine > *{
+    width: 1%;
+    height: 100%;
+}

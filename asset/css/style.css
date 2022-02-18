@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+
+
+a{
+    text-decoration: none;
+}
+
+section{
+    height: 100vh;
+}
+main{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: background 0.5s, color 0.5s;
+}
+.headerWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 2em;
+}
+
+header .headerWrap .logo{}
+header .headerWrap .logo a{}
+header .headerWrap nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+header .headerWrap nav a{
+    display: block;
+    line-height: 2.5;
+    margin: 0 2%;
+}
+header .headerWrap nav a:first-child{
+    margin-left: 0;
+}
+header .headerWrap nav a:last-child{
+    margin-right: 0;
+}
+
+#main{
+
+}
+#main .wrap{}
+#main .mainTitleHead{
+}
+#main .mainTitleHead .titleBox{
+    width: 65%;
+}
+#main .mainTitleHead .titleBox > div{
+    display: flex;
+}
+#main .mainTitleHead .titleBox .titleSubBox_1{}
+#main .mainTitleHead .titleBox .titleSubBox_2{
+    justify-content: center;
+}
+#main .mainTitleHead .titleBox .titleSubBox_3{
+    justify-content: flex-end;
+}
+#main .mainTitleHead .titleBox > div > *{}
+
+
+#main .mainTitleHead .titleHeadLine{
+    height: 45vh;
+}
+
+
+#main .mainTitleBottom{}
+#main .mainTitleBottom .subBox{
+    transform: rotate(270deg) translate(-22%, 0%);
+    transform-origin: 0% 0%;
+}
+#main .mainTitleBottom .subBox h1{
+    /* transform: rotate(270deg);
+    transform-origin: 0% 0%;
+    height: 100%;
+    margin-top: 50%; */
+
+
+    
+    /* height: 100%; */
+    /* margin-top: 50%; */
+    /* position: absolute; */
+}
+#main .mainTitleBottom .subBox .loopDiv{
+    width: 100%;
+    overflow: hidden;
+}
+#main .mainTitleBottom .subBox .loopDiv .loopDivFrame{
+    transform: translateX(0%);
+    /* transition: transform 1s; */
+}
+#main .mainTitleBottom .subBox .loopDiv .recObj{
+    width: 24px;
+    height: 10px;
+    margin: 0 12px;
+}
+
+#main .mainTitleBottom .createBox{
+    width: 20%;
+    text-align: center;
+}
+#main .mainTitleBottom .createBox h5{
+    text-align: right;
+}
+#main .mainTitleBottom .createBox .sinceBox{
+}
+#main .mainTitleBottom .createBox .sinceBox h3{
+}
+
+#introduce_1{
+    transition: background-color 0.75s;
+    
+}
+#introduce_1 .wrap{}
+#introduce_1 .introHead{
+    transform-origin: 100% 0%;
+    /* transform: rotate(270deg); */
+}
+#introduce_1 .introHead .introHeadTitle{}
+#introduce_1 .introHead .loopDiv{
+    overflow: hidden;
+    width: 45vh;
+    height: 100%;
+    transform: rotate(-90deg) translate(0%, 100%);
+    transform-origin: 100% 100%;
+}
+#introduce_1 .introHead .loopDiv .loopDivFrame{
+    transform: translateX(0%);
+}
+#introduce_1 .introHead .loopDiv .loopDivFrame .recObj{
+    height: 3px;
+    width: 24px;
+    margin: 0 12px;
+}
+
+#introduce_1 .introMiddle{
+    width: 100%;
+    height: 50vh;
+}
+#introduce_1 .persona{
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#introduce_1 .persona > *{
+    position: absolute;
+    
+}
+
+#introduce_1 .persona .personaTop{
+    width: 80%;
+    top: 70%;
+    
+}
+#introduce_1 .persona .personaBottom{
+    width: 80%;
+    bottom: 70%;
+}
+
+#introduce_1 .persona h5{
+    padding: 10%;
+    transition: font-size 0.5s, color 0.6s, transform 0.25s;
+    cursor: none;
+}
+#introduce_1 .persona h5:hover{
+    /* transform-origin: 50%; */
+    /* transform: translate(calc(0%), calc(0%)); */
+    /* transform: rotate((calc(360deg / 8 * var(--i)))); */
+    /* font-size: 4em;
+    color: #FFDD00; */
+}
+
+#introduce_1 .introBottom{}
+#introduce_1 .introBottom .introBottomLineTop{
+    height: 45vh;
+    bottom: 0;
+}
+#introduce_1 .introBottom .introBottomLineRight{
+    width: 45vh;
+}
