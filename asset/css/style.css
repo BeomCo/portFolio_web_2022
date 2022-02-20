@@ -211,9 +211,119 @@ header .headerWrap nav a:last-child{
 }
 
 #contact a{
-    font-size: 2.4em;
+    font-size: 2em;
     color: #212121;
 }
 #contact img{
-    height: 3.4em;
+    height: 2em;
+}
+
+
+#contact .contactBottom{
+
+}
+#contact .contactBottomInnerWrap{
+    width: 45vw;
+}
+#contact .contactBottomMailBox{}
+#contact .contactBottomMailBox .gForm{}
+#contact .contactBottomMailBox fieldset{}
+#contact .contactBottomMailBox fieldset .formList{}
+#contact .contactBottomMailBox fieldset .formList input, #contact .contactBottomMailBox fieldset .formList textarea{
+    width: 100%;
+}
+#contact .contactBottomMailBox fieldset .formList textarea{
+    height: 40vh;
+}
+#contact .contactBottomMailBox fieldset .formList button{
+    background: transparent;
+    border: none;
+}
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div{
+    display: flex;
+    align-items: center;
+}
+
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div img{
+    margin-right: 0.5vw;
+}
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft .contactBottomInfoLeftBottom > div{
+    margin-right: 3vw;
+}
+
+
+
+#portFolio_1 .swiper{
+    /* background-color: rgba(33, 33, 33, 0.1); */
+    height: 100%;
+
+}
+
+#portFolio_1 .swiper .swiper-wrapper{
+}
+#portFolio_1 .swiper .swiper-wrapper .swiper-slide{
+    padding: 3%;
+    width: 100%;
+    height: calc((100vh) - 30vh);
+}
+#portFolio_1 .portFolioSlideWrap{
+    width: 100%;
+    height: 100%;
+}
+#portFolio_1 .portFolioSlideWrapLeft{
+    width: 40%;
+}
+#portFolio_1 .portFolioSlideWrapLeft .portFolioSlideImg{
+    overflow: auto;
+    height: 100%;
+    
+}
+#portFolio_1 .swiper .swiper-wrapper .swiper-slide .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar{
+    background: transparent;
+}
+#portFolio_1 .swiper .swiper-wrapper .swiper-slide:nth-child(2) .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar-thumb{
+    background-color: EBEEF7;
+}
+#portFolio_1 .swiper .swiper-wrapper .swiper-slide:nth-child(3) .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar-thumb{
+    background-color: #2D2D2D;
+}
+#portFolio_1 .portFolioSlideWrapLeft .portFolioSlideImg img{
+    width: 100%;
+}
+
+#portFolio_1 .portFolioSlideWrapRight{
+    width: 100%;
+    height: 100%;
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText{
+    width: 100%;
+    height: 100%;
+
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextTitle{}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextDesc{}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextDesc .center{
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    word-break: keep-all;
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextDesc .center h5{
+
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo{
+    width: 100%;
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .left{}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .left img{
+    height: 3em;
+    margin-right: 3%;
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .right{
+    
+}
+#portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .right a{
+    font-size: 3.4em;
 }

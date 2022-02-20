@@ -18,7 +18,7 @@ for(let i of loopDivFrame){
 	
 		if(loopInt > -50){
 			i.style.transform = `translateX(${loopInt}%)`;
-			loopInt -= 0.015;
+			loopInt -= 0.005;
 		}else if(loopInt = -50){
 			i.style.transition = ``;
 			loopInt = 0;
@@ -59,7 +59,11 @@ for(let i of personaHSel){
 	}) 
 }
 
+
+// 전체 세로 값
 let scrollHeight = document.body.scrollHeight;
+
+//	현재 스크롤 위치 
 let scroll = window.scrollY;
 const backLine = document.querySelector('.backLine');
 const header = document.querySelector('header');
@@ -117,8 +121,11 @@ let headerHeight = 0;
 headerHeight = document.querySelector('header').offsetHeight;
 
 console.log(scrollHeight)
+
+//	리사이즈 이벤트
 addEventListener('resize', function(){
 	scrollHeightFnc();
+	scrollFnc();
 	console.log(heightN);
 	headerHeight = document.querySelector('header').offsetHeight;
 	console.log(headerHeight);
@@ -164,6 +171,15 @@ let heightSection_6 = heightN * 5 - headerHeight;
 // console.log(scroll);
 
 console.log(heightN);
+
+const main = document.querySelector('#main');
+const introduce_1 = document.querySelector('#introduce_1');
+const introduce_2 = document.querySelector('#introduce_2');
+const portfolio_1 = document.querySelector('#portfolio_1');
+const portfolio_2 = document.querySelector('#portfolio_2');
+const contact = document.querySelector('#contact');
+
+//	스크롤 이벤트
 addEventListener('scroll', function(){
 	scrollFnc();
 	// console.log(scroll);
@@ -174,10 +190,13 @@ addEventListener('scroll', function(){
 		headerClassClear();
 		headerAtagCwFunc();
 		header.classList.add('bcb');
+		// introduce_1.classList.add('bcb')
+
 	}else if(scroll >= heightSection_3){
 		headerClassClear();
 		headerAtagCbFunc();
 		header.classList.add('bcw');
+
 		if(scroll >= heightSection_4){
 			headerClassClear();
 			headerAtagCwFunc();
@@ -198,3 +217,27 @@ addEventListener('scroll', function(){
 	// console.log(scroll >= heightSection_4 && scroll <= heightSection_5);
 });
 
+// import Swiper from '../js/swiper-bundle.min.js';
+
+
+const swiper = new Swiper(".swiper", {
+    // autoplay: true,
+    speed: 500,
+    spaceBetween: 2000,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+	// grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+		prev: {
+		translate: ["-120%", 0, -500],
+		},
+		next: {
+		translate: ["120%", 0, -500],
+		},
+	},
+
+});

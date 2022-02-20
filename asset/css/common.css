@@ -31,48 +31,65 @@ to{
 /* 클래스 */
 
 .cb{
-    color: #212121;
+    color: #2D2D2D;
 }
 .cw{
-    color: #F3F3F3;
+    color: #EBEEF7;
 }
 .cp{
-    color: #FFDD00;
+    color: #F2CD02;
 }
 
 .bcb{
     background: #2D2D2D;
 }
+.bcg{
+    background: #666666;
+}
+.bco{
+    background: #CE662F;
+}
+.bcbl{
+    background: #51AEE7;
+}
 .bcw{
-    background: #E9E9E9;
+    background: #EBEEF7;
 }
 .bcp{
-    background: #FFDD00;
+    background: #F2CD02;
 }
 
 h1{
     font-size: 7.4em;
+    margin: 0;
 }
 h2{
     font-size: 6.4em;
+    margin: 0;
 }
 h3{
     font-size: 5.4em;
+    margin: 0;
 }
 h4{
     font-size: 4.4em;
+    margin: 0;
 }
 h5{
     font-size: 3.4em;
+    margin: 0;
 }
 h6{
     font-size: 2.4em;
+    margin: 0;
 }
 p{
     font-size: 2.0em;
+    margin: 0;
 }
 span{
     font-size: 1.6em;
+    margin: 0;
 }
 
 .wmt{
@@ -129,6 +146,12 @@ span{
 .df_jc{
     justify-content: center;
 }
+.df_je{
+    justify-content: flex-end;
+}
+.df_js{
+    justify-content: flex-start;
+}
 .df_as{
     align-items: flex-start;
 }
@@ -141,11 +164,19 @@ span{
 
 
 
+
 /* 공통 */
 
 
 body{
     font-size: 10px;
+}
+body::-webkit-scrollbar{
+    display: none;
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #2D2D2D;
 }
 
 
