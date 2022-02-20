@@ -201,56 +201,6 @@ header .headerWrap nav a:last-child{
 
 
 
-#contact{}
-#contact .wrap{}
-#contact .contactHead{}
-#contact .contactHeadTitle{}
-#contact .contactHeadTitle h3{
-    transform: rotate(270deg) translate(-100%, 0%);
-    transform-origin: 0% 0%;
-}
-
-#contact a{
-    font-size: 2em;
-    color: #212121;
-}
-#contact img{
-    height: 2em;
-}
-
-
-#contact .contactBottom{
-
-}
-#contact .contactBottomInnerWrap{
-    width: 45vw;
-}
-#contact .contactBottomMailBox{}
-#contact .contactBottomMailBox .gForm{}
-#contact .contactBottomMailBox fieldset{}
-#contact .contactBottomMailBox fieldset .formList{}
-#contact .contactBottomMailBox fieldset .formList input, #contact .contactBottomMailBox fieldset .formList textarea{
-    width: 100%;
-}
-#contact .contactBottomMailBox fieldset .formList textarea{
-    height: 40vh;
-}
-#contact .contactBottomMailBox fieldset .formList button{
-    background: transparent;
-    border: none;
-}
-#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div{
-    display: flex;
-    align-items: center;
-}
-
-#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div img{
-    margin-right: 0.5vw;
-}
-#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft .contactBottomInfoLeftBottom > div{
-    margin-right: 3vw;
-}
-
 
 
 #portFolio_1 .swiper{
@@ -278,13 +228,15 @@ header .headerWrap nav a:last-child{
     height: 100%;
     
 }
+
 #portFolio_1 .swiper .swiper-wrapper .swiper-slide .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar{
     background: transparent;
+    width: 10px;
+}
+#portFolio_1 .swiper .swiper-wrapper .swiper-slide:nth-child(1) .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar-thumb{
+    background-color: #EBEEF7;
 }
 #portFolio_1 .swiper .swiper-wrapper .swiper-slide:nth-child(2) .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar-thumb{
-    background-color: EBEEF7;
-}
-#portFolio_1 .swiper .swiper-wrapper .swiper-slide:nth-child(3) .portFolioSlideWrapLeft .portFolioSlideImg::-webkit-scrollbar-thumb{
     background-color: #2D2D2D;
 }
 #portFolio_1 .portFolioSlideWrapLeft .portFolioSlideImg img{
@@ -326,4 +278,199 @@ header .headerWrap nav a:last-child{
 }
 #portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .right a{
     font-size: 3.4em;
+}
+
+
+
+#portFolio_2{}
+#portFolio_2 .wrap{}
+#portFolio_2 .portFolioHead{}
+#portFolio_2 .portFolioHead .portFolioTypeH{}
+#portFolio_2 .portFolioHead .portFolioTypeH h3{
+    opacity: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#portFolio_2 .portFolioHead .portFolioTypeH h3.active{
+    opacity: 1;
+    z-index: 1;
+}
+#portFolio_2 .portFolioHead .portFolioTypeH img{
+    height: 5.4em;
+    margin-bottom: 0.6em;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+#portFolio_2 .portFolioHead .portFolioTypeH img.active{
+    opacity: 1;
+    z-index: 1;
+}
+#portFolio_2 .portFolioHead .portFolioHeadLine{
+    width: 45vw;
+}
+
+
+#portFolio_2 .portFolioMiddle{
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap{
+    width: 80vw;
+    height: 65vh;
+}
+
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap > div{
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap > div.active{
+    opacity: 1;
+    z-index: 1;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleDefault{
+    width: 100%;
+    height: 100%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleDefault > div{
+    width: 35vw;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleDefault > div h3{
+    line-height: 2;
+}
+
+#portFolio_2 .portFolioBottom{}
+#portFolio_2 .portFolioBottom .portFolioLoopDiv{
+    
+}
+#portFolio_2 .portFolioBottom .portFolioLoopDiv .portFolioLoopDivFrame{
+}
+#portFolio_2 .portFolioBottom .portFolioLoopDiv .portFolioLoopDivFrame h6{
+    margin: 0.25%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioTypeCont{
+    width: 100%;
+    height: 100%;
+}
+
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio{
+    height: 100%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper{}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide{}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard{
+    width: 30em;
+    height: 80%;
+    border-radius: 4px;
+  
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard .portFolioCardImg{
+    height: 50%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard .portFolioCardImg img{
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody{
+    height: 30em;
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 0 0 4px 4px;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody .used{
+    margin-bottom: 5%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody .used img{
+    height: 3em;
+    margin-right: 3%;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody .link{
+    text-align: center;
+}
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody .link a{
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    font-size: 1.6em;
+    color: #212121;
+    background-color: #F2CD02;
+    border-radius: 4px;
+
+}
+
+/* fixed */
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleFixed{
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleResponsive{}
+
+/* code */
+#portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleCode{}
+
+
+
+
+#contact{}
+#contact .wrap{}
+#contact .contactHead{}
+#contact .contactHead .contactHeadTitle{}
+#contact .contactHead .contactHeadTitle .portFolioLoopDiv{
+    width: 45vh;
+    height: 100px;
+    transform: rotate(-90deg) translate(-95%, 100%);
+    transform-origin: 0% 100%;
+    /* top: 400%; */
+}
+#contact .contactHead .contactHeadTitle .portFolioLoopDiv .contactLoopDivFrame{
+    overflow: hidden;
+    /* width: 50%; */
+
+}
+#contact .contactHead .contactHeadTitle .portFolioLoopDiv .contactLoopDivFrame h4{
+    width: 320px;
+}
+
+#contact a{
+    font-size: 2em;
+    color: #212121;
+}
+#contact img{
+    height: 2em;
+}
+
+
+#contact .contactBottom{
+
+}
+#contact .contactBottomInnerWrap{
+    width: 45vw;
+}
+#contact .contactBottomMailBox{}
+#contact .contactBottomMailBox .gForm{}
+#contact .contactBottomMailBox fieldset{}
+#contact .contactBottomMailBox fieldset .formList{}
+#contact .contactBottomMailBox fieldset .formList input, #contact .contactBottomMailBox fieldset .formList textarea{
+    width: 100%;
+}
+#contact .contactBottomMailBox fieldset .formList textarea{
+    height: 40vh;
+}
+#contact .contactBottomMailBox fieldset .formList button{
+    background: transparent;
+    border: none;
+}
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div{
+    display: flex;
+    align-items: center;
+}
+
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft div img{
+    margin-right: 0.5vw;
+}
+#contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft .contactBottomInfoLeftBottom > div{
+    margin-right: 3vw;
 }

@@ -5,7 +5,7 @@
 *{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
-    transition: font-size 0.1s, width 0.5s, height 0.5s;
+    transition: font-size 0.1s, width 0.5s, height 0.5s, opacity 1s;
 }
 
 svg.loading{
@@ -40,22 +40,22 @@ to{
     color: #F2CD02;
 }
 
-.bcb{
+.bgb{
     background: #2D2D2D;
 }
-.bcg{
+.bgg{
     background: #666666;
 }
-.bco{
+.bgo{
     background: #CE662F;
 }
-.bcbl{
+.bgbl{
     background: #51AEE7;
 }
-.bcw{
+.bgw{
     background: #EBEEF7;
 }
-.bcp{
+.bgp{
     background: #F2CD02;
 }
 
@@ -92,8 +92,20 @@ span{
     margin: 0;
 }
 
+div::-webkit-scrollbar{
+    background: transparent;
+    width: 3px;
+}
+div::-webkit-scrollbar-thumb{
+    background-color: #EBEEF7;
+}
+
+.cur{
+    cursor: pointer;
+}
+
 .wmt{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .wml{
     margin-left: 5%;
@@ -105,12 +117,30 @@ span{
     margin-bottom: 5%;
 }
 
+.pd1{
+    padding: 1%;
+}
+.pd5{
+    padding: 5%;
+}
+.pdt{}
+.pdl{}
+.pdr{}
+.pdb{}
+
 .pa{
     position: absolute;
 }
 .pr{
     position: relative;
 }
+.pac{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .wat{
     top: 5%;
 }
@@ -162,6 +192,35 @@ span{
     align-items: center;
 }
 
+.tac{
+    text-align: center;
+}
+.tal{
+    text-align: left;
+}
+.tar{
+    text-align: right;
+}
+
+.w45{
+    width: 45vw;
+}
+.w80{
+    width: 80vw;
+}
+.h45{
+    height: 45vh;
+}
+
+.ovh{
+    overflow: hidden;
+}
+.ova{
+    overflow: auto;
+}
+.ovs{
+    overflow: scroll;
+}
 
 
 
