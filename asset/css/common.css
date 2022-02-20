@@ -154,6 +154,13 @@ body{
     z-index: 10;
 }
 
+input{
+}
+
+legend{
+    display: none;
+}
+
 .wrap{
     width: 100%;
     height: 100%;

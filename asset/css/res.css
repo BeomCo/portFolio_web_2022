@@ -3,15 +3,26 @@
         font-size: 4px;
     }
     section{
-        min-height: 576px;
+        min-height: 425px;
     }
     main{
-        min-height: 576px;
+        min-height: 425px;
     }
     .wrapLine > div{
-        min-height: 576px;
+        min-height: 425px;
     }
     .titleHeadLine{
+    }
+
+    header .headerWrap nav a{
+        line-height: 5;
+    }
+    header .headerWrap nav a, header .headerWrap .logo a{
+        font-size: 1.4em;
+    }
+
+    .wmt{
+        margin-top: 10%;
     }
 }
 

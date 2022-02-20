@@ -57,7 +57,7 @@ header .headerWrap nav a:last-child{
 #main .mainTitleHead{
 }
 #main .mainTitleHead .titleBox{
-    width: 65%;
+    width: 70%;
 }
 #main .mainTitleHead .titleBox > div{
     display: flex;
@@ -191,5 +191,29 @@ header .headerWrap nav a:last-child{
     bottom: 0;
 }
 #introduce_1 .introBottom .introBottomLineRight{
-    width: 45vh;
+    width: 45vw;
+}
+
+
+
+
+
+
+
+
+#contact{}
+#contact .wrap{}
+#contact .contactHead{}
+#contact .contactHeadTitle{}
+#contact .contactHeadTitle h3{
+    transform: rotate(270deg) translate(-100%, 0%);
+    transform-origin: 0% 0%;
+}
+
+#contact a{
+    font-size: 2.4em;
+    color: #212121;
+}
+#contact img{
+    height: 3.4em;
 }
