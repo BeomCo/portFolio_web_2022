@@ -31,6 +31,10 @@
     #contact .contactBottomInnerWrap{
         width: 100%;
     }
+
+    #main .mainTitleHead .titleBox{
+        width: 70%;
+    }
 }
 
 @media (min-width : 425px){
@@ -48,11 +52,14 @@
     }
     .titleHeadLine{
     }
+    #main .mainTitleHead .titleBox{
+        width: 70%;
+    }
 }
 
 @media (min-width : 768px){
     body{
-        font-size: 8px;
+        font-size: 7px;
     }
 
 }
@@ -60,7 +67,7 @@
 @media (min-width : 1194px){
     
     body{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .wrap{
@@ -81,11 +88,22 @@
     }
     .titleHeadLine{
     }
+    #main .mainTitleHead .titleBox{
+        width: 40%;
+    }
+    #introduce_2 .introHead img{
+        margin-top: 8%;
+        margin-left: 3%;
+    }
 }
 
 @media (min-width : 1900px){
     body{
-        font-size: 12px;
+        font-size: 11px;
+    }
+    #introduce_2 .introHead img{
+        margin-top: 7%;
+        margin-left: 3%;
     }
 }
 @media (min-width : 2500px){

@@ -1,8 +1,73 @@
+const opening = document.querySelector('#opening');
+const openingHello = document.querySelector('.openingHello');
+const openingHelloH1 = document.querySelector('.openingHello h1');
+const openingloader = document.querySelector('#opening .loader');
+let openingRand = Math.floor(Math.random() * 1501) + 1500;
+// console.log(openingRand);
+let scrollHeight = document.body.scrollHeight;
+
+//	현재 스크롤 위치 
+let scroll = window.scrollY;
+const backLine = document.querySelector('.backLine');
+const header = document.querySelector('header');
+// backLine.style.height = `${scrollHeight}px`
+
+const sectionSel = document.querySelectorAll('#frame > *');
+let sectionChk = 0;
+
+for(let chk of sectionSel){
+	sectionChk += 1;
+}
+// console.log(sectionChk);
+
+
+let heightN = 0;
+
+heightN = scrollHeight / sectionChk
+
+const locationBody = document.querySelector('body').offsetTop;
+
+// console.log(locationBody);
+
+
+
+// window.addEventListener('beforeunload', (event) => {
+// 	event.preventDefault();
+
+// });
+
+
+
+
+// console.log(locationBody);
+
+setTimeout(() => {
+	window.scrollTo(0, 0);
+	
+	setTimeout(() => {
+		window.scrollTo(0, 0);
+	
+		openingHello.querySelector('h1').classList.add('active');
+		setTimeout(() => {
+			openingloader.classList.add('active');
+			frame.classList.add('active');
+			setTimeout(() => {
+				opening.classList.add('deActive');
+				main.querySelector('.wrap').classList.add('active');
+				document.body.classList.add('active');
+				header.classList.add('active', 'bgb');
+			}, openingRand);
+		}, 1500);
+	}, 500);
+}, 0);
+
+
+const frame = document.querySelector('#frame');
 const main = document.querySelector('#main');
 const introduce_1 = document.querySelector('#introduce_1');
 const introduce_2 = document.querySelector('#introduce_2');
-const portfolio_1 = document.querySelector('#portfolio_1');
-const portfolio_2 = document.querySelector('#portfolio_2');
+const portFolio_1 = document.querySelector('#portFolio_1');
+const portFolio_2 = document.querySelector('#portFolio_2');
 const contact = document.querySelector('#contact');
 
 
@@ -89,7 +154,7 @@ for(let i of personaHSel){
 
 	i.addEventListener('mouseover', function(){
 		// console.log(i);
-		i.style.fontSize = '5em';
+		i.style.fontSize = '6em';
 		i.style.color = '#F2CD02';
 		document.querySelector('#introduce_1').style.backgroundColor = 'rgba(45, 45, 45, 0.9)'
 	}) 
@@ -105,26 +170,12 @@ for(let i of personaHSel){
 
 
 // 전체 세로 값
-let scrollHeight = document.body.scrollHeight;
+// let scrollHeight = document.body.scrollHeight;
 
-//	현재 스크롤 위치 
-let scroll = window.scrollY;
-const backLine = document.querySelector('.backLine');
-const header = document.querySelector('header');
-// backLine.style.height = `${scrollHeight}px`
-
-const sectionSel = document.querySelectorAll('#frame > *');
-let sectionChk = 0;
-
-for(chk of sectionSel){
-	sectionChk += 1;
-}
-console.log(sectionChk);
+// console.log(scrollHeight);
 
 
-let heightN = 0;
 
-heightN = scrollHeight / sectionChk
 
 function scrollHeightFnc(){
 	scrollHeight = document.body.scrollHeight;
@@ -158,13 +209,13 @@ function scrollFnc(){
 // }
 
 function headerClassClear(){
-	header.classList.remove(...header.classList);
+	header.classList.remove('bgb','bgw');
 }
 
 let headerHeight = 0;
 headerHeight = document.querySelector('header').offsetHeight;
 
-console.log(scrollHeight)
+// console.log(scrollHeight)
 
 //	리사이즈 이벤트
 addEventListener('resize', function(){
@@ -205,6 +256,8 @@ function headerAtagCwFunc(){
 }
 
 // let scrollHeightMin = 
+let heightSection_1 = heightN - headerHeight;
+let heightSection_2 = heightN * 1 - headerHeight;
 let heightSection_3 = heightN * 2 - headerHeight;
 let heightSection_4 = heightN * 3 - headerHeight;
 let heightSection_5 = heightN * 4 - headerHeight;
@@ -214,40 +267,66 @@ let heightSection_6 = heightN * 5 - headerHeight;
 
 // console.log(scroll);
 
-console.log(heightN);
+// console.log(heightN);
+
+
+function sectionWrapClear(){
+	introduce_1.querySelector('.wrap').classList.remove('active');
+	introduce_2.querySelector('.wrap').classList.remove('active');
+	portFolio_1.querySelector('.wrap').classList.remove('active');
+	portFolio_2.querySelector('.wrap').classList.remove('active');
+	contact.querySelector('.wrap').classList.remove('active');
+}
 
 
 
 //	스크롤 이벤트
 addEventListener('scroll', function(){
 	scrollFnc();
+	// for(let sectionWrap of sectionSel){
+	// 	console.log(sectionWrap)
+	// }
+
 	// console.log(scroll);
 
 	// if(scroll >= heightN * 2)
 	// console.log(heightN * 2)
-	if(scroll <= heightSection_3){
+	// console.log(scroll >= heightSection_2);
+	if(scroll >= heightSection_2){
 		headerClassClear();
 		headerAtagCwFunc();
+		// sectionWrapClear();
 		header.classList.add('bgb');
+		introduce_1.querySelector('.wrap').classList.add('active');
 		// introduce_1.classList.add('bgb')
 
-	}else if(scroll >= heightSection_3){
-		headerClassClear();
-		headerAtagCbFunc();
-		header.classList.add('bgw');
-
-		if(scroll >= heightSection_4){
+		if(scroll >= heightSection_3){
 			headerClassClear();
-			headerAtagCwFunc();
-			header.classList.add('bgb');
-			if(scroll >= heightSection_5){
+			headerAtagCbFunc();
+			// sectionWrapClear();
+			header.classList.add('bgw');
+			introduce_2.querySelector('.wrap').classList.add('active');
+			console.log(scroll >= heightSection_3);
+
+			if(scroll >= heightSection_4){
 				headerClassClear();
-				headerAtagCbFunc();
-				header.classList.add('bgw');
-				if(scroll >= heightSection_6){
+				headerAtagCwFunc();
+				// sectionWrapClear();
+				header.classList.add('bgb');
+				portFolio_1.querySelector('.wrap').classList.add('active');
+				if(scroll >= heightSection_5){
 					headerClassClear();
-					headerAtagCwFunc();
-					header.classList.add('bgb');
+					headerAtagCbFunc();
+					// sectionWrapClear();
+					header.classList.add('bgw');
+					portFolio_2.querySelector('.wrap').classList.add('active');
+					if(scroll >= heightSection_6){
+						headerClassClear();
+						headerAtagCwFunc();
+						// sectionWrapClear();
+						header.classList.add('bgb');
+						contact.querySelector('.wrap').classList.add('active');
+					}
 				}
 			}
 		}
@@ -255,6 +334,7 @@ addEventListener('scroll', function(){
 	
 	// console.log(scroll >= heightSection_4 && scroll <= heightSection_5);
 });
+
 
 
 const portFolioTypeFixed = document.querySelector('.portFolioType.fixed');
@@ -323,6 +403,32 @@ portFolioTypeCode.addEventListener('click', function(){
 })
 
 
+
+// 헤더 버튼 이동
+const scrollIntroY = document.querySelector('#introduce_1').getBoundingClientRect().top + window.pageYOffset
+const scrollPortY = document.querySelector('#portFolio_1').getBoundingClientRect().top + window.pageYOffset
+const scrollContactY = document.querySelector('#contact').getBoundingClientRect().top + window.pageYOffset
+
+
+document.querySelector('.headerIntro').addEventListener('click', function(e){
+	e.preventDefault();
+	window.scrollTo({top:scrollIntroY, behavior:'smooth'});
+});
+document.querySelector('.headerPort').addEventListener('click', function(e){
+	e.preventDefault();
+	window.scrollTo({top:scrollPortY, behavior:'smooth'});
+});
+document.querySelector('.headerContact').addEventListener('click', function(e){
+	e.preventDefault();
+	window.scrollTo({top:scrollContactY, behavior:'smooth'});
+});
+document.querySelector('.headerHome').addEventListener('click', function(e){
+	e.preventDefault();
+	window.scrollTo(0, 0);
+});
+
+
+
 // import Swiper from '../js/swiper-bundle.min.js';
 
 
@@ -360,3 +466,41 @@ const swiperFolio = new Swiper(".swiperFolio", {
        
 
 });
+
+// const wrapperEl = document.querySelector('.anime');
+//     const numberOfEls = 90;
+//     const duration = 6000;
+//     const delay = duration / numberOfEls;
+
+//     let tl = anime.timeline({
+//       duration: delay,
+//       complete: function() { tl.restart(); }
+//     });
+
+//     function createEl(i) {
+// 		let el = document.createElement('div');
+// 		const rotate = (360 / numberOfEls) * i;
+// 		const translateY = -50;
+// 		const hue = Math.round(360 / numberOfEls * i);
+// 		el.classList.add('el');
+// 		el.style.backgroundColor = 'hsl(' + hue + ', 10%, 30%)';
+// 		el.style.transform = 'rotate(' + rotate + 'deg) translateY(' + translateY + '%)';
+// 		tl.add({
+// 		begin: function() {
+// 			anime({
+// 			targets: el,
+// 			backgroundColor: ['hsl(' + hue + ', 40%, 60%)', 'hsl(' + hue + ', 60%, 80%)'],
+// 			rotate: [rotate + 'deg', rotate + 10 +'deg'],
+// 			translateY: [translateY + '%', translateY + 10 + '%'],
+// 			scale: [1, 1.25],
+// 			easing: 'easeInOutSine',
+// 			direction: 'alternate',
+// 			duration: duration * .1
+// 			});
+// 		}
+// 		});
+// 		wrapperEl.appendChild(el);
+//     };
+
+//     for (let i = 0; i < numberOfEls; i++) createEl(i);
+

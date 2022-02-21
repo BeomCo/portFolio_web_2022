@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onload="test();">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beomseok OH PortFolio</title>
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./asset/css/common.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/res.css">
 </head>
-<body class="">
+<body class="pr">
     <!-- <div class="wrapLine"></div> -->
     <!-- <svg class="loading">
         <polygon></polygon>
@@ -25,16 +25,23 @@
         <div class="backLine_4 pa bgb"></div>
         <div class="backLine_5 pa bgb"></div>
     </div> -->
+
+    <div id="opening" class="bgb cp df df_dc df_jc df_ac pa">
+        <div class="openingHello">
+            <h1>hello</h1>
+        </div>
+        <div class="loader">Loading...</div>
+    </div>
     
     <header class="bgb">
         <div class="headerWrap">
             <div class="logo">
-                <a href="" class="cw">BeomCo</a>
+                <a href="" class="cw headerHome">BeomCo</a>
             </div>
-            <nav class="">
-                <a class="cw" href="">INTRODUCE</a>
-                <a class="cw" href="">PORTFOLIO</a>
-                <a class="cw" href="">CONTACT</a>
+            <nav class="navBtn">
+                <a class="cw headerIntro" href="">INTRODUCE</a>
+                <a class="cw headerPort" href="">PORTFOLIO</a>
+                <a class="cw headerContact" href="">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -46,7 +53,7 @@
 
 
 
-        <main id="main" class="sectionChk page bgp">
+        <section id="main" class="sectionChk page bgp">
             <div class="wrap df df_dc df_jb">
 
                 <div class="mainTitleHead wmt df df_jb df_as">
@@ -132,7 +139,7 @@
 
 
             </div>
-        </main>
+        </section>
 
         <section id="introduce_1" class="sectionChk page bgw">
             <div class="wrap df df_dc df_jb">
@@ -198,27 +205,35 @@
                 <div class="introMiddle df df_jc df_ac pr">
                     <div class="persona pa df df_ac df_jc">
                         <h3>personality</h3>
-                        <div class="personaTop df df_ja">
+                        <div class="personaTop df df_ja tac">
                             <div class="personaTopLeft">
-                                <h5 class="parallax pActive" data-speed="4" style="--i:0;">active</h5>
-                                <h5 class="parallax pEnterprising" data-speed="2.5" style="--i:2;">enterprising</h5>
+                                <!-- <h5 class="parallax pActive" data-speed="2.8" style="--i:0;">active</h5> -->
+                                <h5 class="parallax pActiveKr" data-speed="2.8" style="--i:0;">적극</h5>
+                                <!-- <h5 class="parallax pEnterprising" data-speed="2.5" style="--i:2;">enterprising</h5> -->
+                                <h5 class="parallax pEnterprisingKr" data-speed="2.5" style="--i:2;">진취</h5>
                             </div>
                             <div class="personaTopRight">
-                                <h5 class="parallax pDiligent" data-speed="3.2" style="--i:1;">diligent</h5>
-                            <h5 class="parallax pImagination" data-speed="3" style="--i:3;">imagination</h5>
+                                <!-- <h5 class="parallax pDiligent" data-speed="3.2" style="--i:1;">diligent</h5> -->
+                                <h5 class="parallax pDiligentKr" data-speed="3.2" style="--i:1;">근면</h5>
+                            <!-- <h5 class="parallax pCreativity" data-speed="3" style="--i:3;">creativity</h5> -->
+                            <h5 class="parallax pCreativityKr" data-speed="3" style="--i:3;">창의</h5>
                             </div>
                         
                             
                         </div>
-                        <div class="personaBottom df df_ja">
+                        <div class="personaBottom df df_ja tac">
                             <div class="personaBottomLeft">
-                                <h5 class="parallax pReliable" data-speed="3.8" style="--i:4;">reliable</h5>
-                                <h5 class="parallax pHardworking" data-speed="4.3" style="--i:5;">hardworking</h5>
+                                <!-- <h5 class="parallax pReliable" data-speed="3.8" style="--i:4;">reliable</h5> -->
+                                <h5 class="parallax pReliableKr" data-speed="3.8" style="--i:4;">신뢰</h5>
+                                <!-- <h5 class="parallax pIntense" data-speed="4.3" style="--i:5;">intense</h5> -->
+                                <h5 class="parallax pIntenseKr" data-speed="4.3" style="--i:5;">열정</h5>
                             </div>
                             <div class="personaBottomRight">
 
-                                <h5 class="parallax pPositive" data-speed="2.7" style="--i:6;">positive</h5>
-                                <h5 class="parallax pCooperation" data-speed="3.4" style="--i:7;">cooperation</h5>
+                                <!-- <h5 class="parallax pPositive" data-speed="2.9" style="--i:6;">positive</h5> -->
+                                <h5 class="parallax pPositiveKr" data-speed="2.9" style="--i:6;">긍정</h5>
+                                <!-- <h5 class="parallax pCooperation" data-speed="3.4" style="--i:7;">cooperation</h5> -->
+                                <h5 class="parallax pCooperationKr" data-speed="3.4" style="--i:7;">협력</h5>
                             </div>
                             
                         </div>
@@ -238,10 +253,22 @@
         </section>
 
         <section id="introduce_2" class="sectionChk page bgb">
-            <div class="wrap cw">
-                <div class="introHead wmt wml df df_dc df_as pr">
-                    <h1>introduce</h1>
-                    <div class="loopDiv df pa">
+            <div class="wrap df df_dc df_jb cw">
+
+                <div class="introHead df df_jc">
+                    <div class="introHeadLine bgp"></div>
+                </div>
+
+                <div class="introBody">
+
+                </div>
+
+                <div class="introBottom wmb wml df df_dc df_as pr">
+                    <img src="./asset/img/beomco.jpg" alt="" class="profile">
+                    <div class="introHeadTitle">
+                        <h1>introduce</h1>
+                    </div>
+                    <!-- <div class="loopDiv df">
                         <div class="loopDivFrame df">
                             <div class="recObj bgw"></div>
                             <div class="recObj bgw"></div>
@@ -292,7 +319,7 @@
                             <div class="recObj bgw"></div>
                             <div class="recObj bgw"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 
@@ -304,7 +331,7 @@
 
                 <div class="portFolioHead wml wmt">
                     <div class="portFolioHeadTitle">
-                        <h3>featured portfolio</h3>
+                        <h3>main project</h3>
                     </div>
                 </div>
 
@@ -627,12 +654,12 @@
                                         <div class="swiper-slide df df_ac df_jc">
                                             <div class="portFolioCard">
                                                 <div class="portFolioCardImg ova">
-                                                    <img src="./asset/img/Example Icon Images – Browse 98,510 Stock Photos, Vectors, and Video.jpg" class="card-img-top" alt="Example">
+                                                    <img src="./asset/img/Origin.png" class="card-img-top" alt="Example">
                                                 </div>
                                                 <div class="portFolioCardBody df df_dc df_jb bgw cb pd5">
                                                     <div class="portFolioCardBodyHead">
-                                                        <h5 class="card-title">Example</h5>
-                                                        <p class="card-text">Example</p>
+                                                        <h5 class="card-title">Origin</h5>
+                                                        <p class="card-text">반응형 웹</p>
                                                     </div>
                                                     <div class="portFolioCardBodyInfo">
                                                         <div class="used">
@@ -827,7 +854,7 @@
                     </div>
                 </div>
 
-                <div class="contactBottom wmr df df_dc df_ae pr">
+                <div class="contactBottom wmr wmb df df_dc df_ae pr">
 
                     <div class="contactBottomInnerWrap">
 
@@ -916,6 +943,7 @@
 
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
     <script src="./asset/js/swiper-bundle.min.js"></script>
+    <!-- <script src="./asset/js/anime.js"></script> -->
     <script src="./asset/js/script.js"></script>
     
 </body>
