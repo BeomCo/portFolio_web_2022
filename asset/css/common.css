@@ -233,7 +233,7 @@ div::-webkit-scrollbar-thumb{
 
 body{
     font-size: 10px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 body.active{
     overflow-y: auto;

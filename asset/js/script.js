@@ -40,26 +40,27 @@ const locationBody = document.querySelector('body').offsetTop;
 
 
 // console.log(locationBody);
+//  로딩화면
 
-setTimeout(() => {
-	window.scrollTo(0, 0);
+// setTimeout(() => {
+// 	window.scrollTo(0, 0);
 	
-	setTimeout(() => {
-		window.scrollTo(0, 0);
+// 	setTimeout(() => {
+// 		window.scrollTo(0, 0);
 	
-		openingHello.querySelector('h1').classList.add('active');
-		setTimeout(() => {
-			openingloader.classList.add('active');
-			frame.classList.add('active');
-			setTimeout(() => {
-				opening.classList.add('deActive');
-				main.querySelector('.wrap').classList.add('active');
-				document.body.classList.add('active');
-				header.classList.add('active', 'bgb');
-			}, openingRand);
-		}, 1500);
-	}, 500);
-}, 0);
+// 		openingHello.querySelector('h1').classList.add('active');
+// 		setTimeout(() => {
+// 			openingloader.classList.add('active');
+// 			frame.classList.add('active');
+// 			setTimeout(() => {
+// 				opening.classList.add('deActive');
+// 				main.querySelector('.wrap').classList.add('active');
+// 				document.body.classList.add('active');
+// 				header.classList.add('active', 'bgb');
+// 			}, openingRand);
+// 		}, 1500);
+// 	}, 500);
+// }, 0);
 
 
 const frame = document.querySelector('#frame');
@@ -221,9 +222,9 @@ headerHeight = document.querySelector('header').offsetHeight;
 addEventListener('resize', function(){
 	scrollHeightFnc();
 	scrollFnc();
-	console.log(heightN);
+	// console.log(heightN);
 	headerHeight = document.querySelector('header').offsetHeight;
-	console.log(headerHeight);
+	// console.log(headerHeight);
 });
 
 const headerAtagAll = document.querySelectorAll('header a');
@@ -306,7 +307,7 @@ addEventListener('scroll', function(){
 			// sectionWrapClear();
 			header.classList.add('bgw');
 			introduce_2.querySelector('.wrap').classList.add('active');
-			console.log(scroll >= heightSection_3);
+			// console.log(scroll >= heightSection_3);
 
 			if(scroll >= heightSection_4){
 				headerClassClear();

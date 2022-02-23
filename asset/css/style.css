@@ -20,7 +20,7 @@ header{
     z-index: 100;
     transition: background 0.5s, color 0.5s, transform 1s;
     /* transition-delay: 0.5s; */
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
     
 }
 

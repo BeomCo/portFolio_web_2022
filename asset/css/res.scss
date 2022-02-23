@@ -1,0 +1,110 @@
+@media (max-width: 425px) {
+    body {
+      font-size: 4px;
+    }
+  
+    section, main, .wrapLine > div {
+      min-height: 425px;
+    }
+  
+    .titleHeadLine {}
+  
+    header .headerWrap {
+      nav a {
+        line-height: 5;
+        font-size: 1.4em;
+      }
+  
+      .logo a {
+        font-size: 1.4em;
+      }
+    }
+  
+    .wmt {
+      margin-top: 10%;
+    }
+  
+    #contact {
+      .contactBottom {
+        margin-left: 5%;
+      }
+  
+      .contactBottomInnerWrap {
+        width: 100%;
+      }
+    }
+  
+    #main .mainTitleHead .titleBox {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 425px) {
+    body {
+      font-size: 6px;
+    }
+  
+    section, main, .wrapLine > div {
+      min-height: 576px;
+    }
+  
+    .titleHeadLine {}
+  
+    #main .mainTitleHead .titleBox {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 7px;
+    }
+  }
+  
+  @media (min-width: 1194px) {
+    body {
+      font-size: 8px;
+    }
+  
+    .wrap, .headerWrap {
+      width: 100%;
+    }
+  
+    section, main, .wrapLine > div {
+      min-height: 720px;
+    }
+  
+    .titleHeadLine {}
+  
+    #main .mainTitleHead .titleBox {
+      width: 40%;
+    }
+  
+    #introduce_2 .introHead img {
+      margin-top: 8%;
+      margin-left: 3%;
+    }
+  }
+  
+  @media (min-width: 1900px) {
+    body {
+      font-size: 11px;
+    }
+  
+    #introduce_2 .introHead img {
+      margin-top: 7%;
+      margin-left: 3%;
+    }
+  }
+  
+  @media (min-width: 2500px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 3800px) {
+    body {
+      font-size: 24px;
+    }
+  }

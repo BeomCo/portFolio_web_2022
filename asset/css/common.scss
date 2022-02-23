@@ -1,0 +1,499 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  transition: font-size 0.1s, width 0.5s, height 0.5s, opacity 1s;
+}
+
+svg.loading {
+  transform-origin: 50% 65%;
+
+  polygon {
+    stroke-dasharray: 17;
+    animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 136;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 클래스 */
+
+.dn {
+  display: none;
+}
+
+.cb {
+  color: #2D2D2D;
+}
+
+.cw {
+  color: #EBEEF7;
+}
+
+.cp {
+  color: #F2CD02;
+}
+
+.bgb {
+  background: #2D2D2D;
+}
+
+.bgg {
+  background: #666666;
+}
+
+.bgo {
+  background: #CE662F;
+}
+
+.bgbl {
+  background: #51AEE7;
+}
+
+.bgw {
+  background: #EBEEF7;
+}
+
+.bgp {
+  background: #F2CD02;
+}
+
+h1 {
+  font-size: 7.4em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 6.4em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 5.4em;
+  margin: 0;
+}
+
+h4 {
+  font-size: 4.4em;
+  margin: 0;
+}
+
+h5 {
+  font-size: 3.4em;
+  margin: 0;
+}
+
+h6 {
+  font-size: 2.4em;
+  margin: 0;
+}
+
+p {
+  font-size: 2.0em;
+  margin: 0;
+}
+
+span {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+div {
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #EBEEF7;
+  }
+}
+
+.cur {
+  cursor: pointer;
+}
+
+.wmt {
+  margin-top: 5%;
+}
+
+.wml {
+  margin-left: 5%;
+}
+
+.wmr {
+  margin-right: 5%;
+}
+
+.wmb {
+  margin-bottom: 5%;
+}
+
+.pd1 {
+  padding: 1%;
+}
+
+.pd5 {
+  padding: 5%;
+}
+
+.pdt, .pdl, .pdr, .pdb {}
+
+.pa {
+  position: absolute;
+}
+
+.pr {
+  position: relative;
+}
+
+.pac {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wat {
+  top: 5%;
+}
+
+.wal {
+  left: 5%;
+}
+
+.war {
+  right: 5%;
+}
+
+.wab {
+  bottom: 5%;
+}
+
+.ilw {
+  width: 3px;
+}
+
+.ilh {
+  height: 3px;
+}
+
+.df {
+  display: flex;
+}
+
+.df_dc {
+  flex-direction: column;
+}
+
+.df_jb {
+  justify-content: space-between;
+}
+
+.df_ja {
+  justify-content: space-around;
+}
+
+.df_jc {
+  justify-content: center;
+}
+
+.df_je {
+  justify-content: flex-end;
+}
+
+.df_js {
+  justify-content: flex-start;
+}
+
+.df_as {
+  align-items: flex-start;
+}
+
+.df_ae {
+  align-items: flex-end;
+}
+
+.df_ac {
+  align-items: center;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.w45 {
+  width: 45vw;
+}
+
+.w80 {
+  width: 80vw;
+}
+
+.h45 {
+  height: 45vh;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.ova {
+  overflow: auto;
+}
+
+.ovs {
+  overflow: scroll;
+}
+
+/* 공통 */
+
+body {
+  font-size: 10px;
+
+  /* overflow-y: hidden; */
+
+  &.active {
+    overflow-y: auto;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #2D2D2D;
+  }
+}
+
+#opening {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+
+  /* transform: translate(-50%, 0%); */
+
+  &.deActive {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  .openingHello {
+    overflow: hidden;
+
+    h1 {
+      transform: translateY(-100%);
+      transition: transform 1.5s;
+
+      &.active {
+        transform: translateY(0%);
+      }
+    }
+  }
+}
+
+#frame.active {
+  /* display: block; */
+}
+
+.anime {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1px;
+  height: 100vh;
+}
+
+.el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 24vh;
+  margin-top: -12vh;
+  transform-origin: 50% 100%;
+  background: white;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #F2CD02;
+  background: -moz-linear-gradient(left, #F2CD02 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #F2CD02 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #F2CD02 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #F2CD02 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #F2CD02 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &:before {
+    width: 50%;
+    height: 50%;
+    background: #F2CD02;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+
+  &:after {
+    background: #2D2D2D;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#frame {
+  width: 100%;
+  z-index: 10;
+
+  /* display: none; */
+}
+
+input {}
+
+legend {
+  display: none;
+}
+
+section {
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+
+  /* padding: 44px 20px; */
+  padding: 44px 2%;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(100%) scale(1.2);
+  transition: transform 0.75s;
+
+  &.active {
+    transform: translateY(0%) scale(1);
+  }
+}
+
+.wrapTb, .wrapMb {
+  width: 100%;
+}
+
+.wrapLine {
+  /* width: 1194px; */
+  height: 100%;
+
+  /* padding: 44px 20px; */
+  padding: 44px 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+
+  > div {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+
+    /* margin: 0 10px; */
+    background-color: #3C3C3C;
+    top: 0;
+  }
+
+  .leftLine {
+    left: 0;
+  }
+
+  .rightLine {
+    right: 0;
+  }
+}
+
+.parallax {
+  width: 6em;
+  transition: transform 0.5s;
+}
+
+.backLine {
+  width: 100%;
+  z-index: 1;
+
+  > * {
+    width: 1%;
+    height: 100%;
+  }
+}
