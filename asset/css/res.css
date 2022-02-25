@@ -61,7 +61,9 @@
     body{
         font-size: 7px;
     }
-
+    #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleDefault > div{
+        width: 50vw;
+    }
 }
 
 @media (min-width : 1194px){

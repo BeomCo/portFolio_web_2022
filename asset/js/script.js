@@ -456,17 +456,19 @@ const swiper = new Swiper(".swiper", {
 });
 const swiperFolio = new Swiper(".swiperFolio", {
     slidesPerView: 3,
-        // spaceBetween: 200,
-        slidesPerGroup: 3,
-        // loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+	// spaceBetween: 200,
+	slidesPerGroup: 3,
+	// loop: true,
+	loopFillGroupWithBlank: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
        
-
 });
+
+
+console.log(swiperFolio.slidesPerView);
 
 // const wrapperEl = document.querySelector('.anime');
 //     const numberOfEls = 90;

@@ -82,10 +82,17 @@ portFolio_responsive = [
 portFolio_code = [
     {
         title : "Weather App",
-        desc : "날씨 앱",
+        desc : "openweather api 를 이용해서 날씨 정보를 확인 할수 있는 웹 입니다.",
         previewImg : "WeatherApp_intro.png",
         link : "https://beomco.github.io/Weather_Web/",
         used : "html, css, js"
+    },
+    {
+        title : "Chatting App",
+        desc : "jquery, firebase, db 를 이용해서 채팅 할수 있는 웹 입니다.",
+        previewImg : "My Chat.png",
+        link : "https://beomseok.synology.me:7004",
+        used : "html, css, js, jquery, firebase, php"
     },
     
 ];
