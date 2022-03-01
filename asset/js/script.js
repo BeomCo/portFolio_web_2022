@@ -279,7 +279,8 @@ addEventListener('resize', function(){
 	// console.log(heightN);
 	headerHeight = document.querySelector('header').offsetHeight;
 	offsetWidthLet = document.body.offsetWidth;
-	modifySwiperPort()
+	modifySwiperPort();
+	heightSection();
 	// console.log(offsetWidthLet);
 });
 
@@ -313,12 +314,15 @@ function headerAtagCwFunc(){
 }
 
 // let scrollHeightMin = 
-let heightSection_1 = heightN - headerHeight;
-let heightSection_2 = heightN * 1 - headerHeight;
-let heightSection_3 = heightN * 2 - headerHeight;
-let heightSection_4 = heightN * 3 - headerHeight;
-let heightSection_5 = heightN * 4 - headerHeight;
-let heightSection_6 = heightN * 5 - headerHeight;
+function heightSection(){
+	heightSection_1 = heightN - headerHeight;
+	heightSection_2 = heightN * 1 - headerHeight;
+	heightSection_3 = heightN * 2 - headerHeight;
+	heightSection_4 = heightN * 3 - headerHeight;
+	heightSection_5 = heightN * 4 - headerHeight;
+	heightSection_6 = heightN * 5 - headerHeight;
+}
+heightSection();
 
 // console.log(headerAtag);
 
