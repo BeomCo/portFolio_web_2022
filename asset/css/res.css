@@ -26,7 +26,13 @@
     }
 
     #contact .contactBottom{
-        margin-left: 5%;
+        /* margin: 0 3%; */
+    }
+    .wmr{
+        margin: 0;
+    }
+    .wml{
+        margin: 0;
     }
     #contact .contactBottomInnerWrap{
         width: 100%;
@@ -56,7 +62,15 @@
         margin-bottom: 0;
     }
     #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard{
-        width: 40em;
+        width: 80vw;
+    }
+    #portFolio_1 .portFolioSlideWrap{
+        flex-direction: column;
+    }
+    #portFolio_1 .portFolioSlideWrapLeft{
+        width: 100%;
+        height: 40%;
+        margin-bottom: 10%;
     }
 }
 
@@ -77,6 +91,9 @@
     }
     #main .mainTitleHead .titleBox{
         width: 70%;
+    }
+    #introduce_2 .introBody{
+        justify-content: flex-start;
     }
 }
 

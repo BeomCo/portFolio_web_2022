@@ -136,7 +136,10 @@ for(let i of contactLoopDivFrame){
 }
 
 
-document.addEventListener("mousemove" , parallax);
+
+
+
+introduce_1.addEventListener("mousemove" , parallax);
 function parallax(e){
 	this.querySelectorAll('.parallax').forEach(parallax=>{
 
@@ -219,9 +222,9 @@ function modifySwiperPort(){
 		swiperFolio = new Swiper(".swiperFolio", {
 			slidesPerView: 3,
 			// spaceBetween: 200,
-			slidesPerGroup: 3,
+			// slidesPerGroup: 3,
 			// loop: true,
-			loopFillGroupWithBlank: true,
+			// loopFillGroupWithBlank: true,
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
@@ -233,9 +236,9 @@ function modifySwiperPort(){
 		swiperFolio = new Swiper(".swiperFolio", {
 			slidesPerView: 2,
 			// spaceBetween: 200,
-			slidesPerGroup: 2,
+			// slidesPerGroup: 2,
 			// loop: true,
-			loopFillGroupWithBlank: true,
+			// loopFillGroupWithBlank: true,
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
@@ -246,9 +249,9 @@ function modifySwiperPort(){
 			swiperFolio = new Swiper(".swiperFolio", {
 				slidesPerView: 1,
 				// spaceBetween: 200,
-				slidesPerGroup: 1,
+				// slidesPerGroup: 1,
 				// loop: true,
-				loopFillGroupWithBlank: true,
+				// loopFillGroupWithBlank: true,
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
@@ -555,3 +558,7 @@ const swiper = new Swiper(".swiper", {
 
 //     for (let i = 0; i < numberOfEls; i++) createEl(i);
 
+
+
+
+// const bgw

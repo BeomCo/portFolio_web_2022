@@ -299,6 +299,22 @@ header .headerWrap nav a:last-child{
     
 }
 
+#introduce_2 .introBody{}
+#introduce_2 .introBody .introBodyCont{}
+#introduce_2 .introBody .introBodyCont .txtBox{}
+#introduce_2 .introBody .introBodyCont .notionLink{
+    width: 100%;
+}
+#introduce_2 .introBody .introBodyCont .notionLink a{
+    /* width: 30em; */
+    /* height: 30em; */
+    font-size: 3em;
+    color: #F2CD02;
+}
+#introduce_2 .introBody .introBodyCont .notionLink img{
+    height: 30em;
+}
+
 #introduce_2 .introBottom{
     transform-origin: 100% 0%;
     /* transform: rotate(270deg); */
