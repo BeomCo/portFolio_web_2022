@@ -64,7 +64,7 @@ portFolio_fixed = [
 portFolio_responsive = [
     {
         title : "Aurelie",
-        desc : "Vue를 이용하여 마크업한 반응형 웹",
+        desc : "Vue를 이용해 마크업한 반응형 웹",
         previewImg : "01_vue_spa.png",
         link : "https://github.com/BeomCo/vue_spa_Aurelie",
         used : "html, css, js, vue"
