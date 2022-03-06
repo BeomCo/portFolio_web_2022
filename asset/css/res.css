@@ -95,6 +95,8 @@
     #introduce_2 .introBody{
         justify-content: flex-start;
     }
+    
+    
 }
 
 @media (min-width : 768px){
@@ -103,6 +105,12 @@
     }
     #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .portFolioMiddleDefault > div{
         width: 50vw;
+    }
+    #contact .contactInfo{
+        display: none;
+    }
+    #contact .contactBottomMailBox{
+        display: block;
     }
 }
 

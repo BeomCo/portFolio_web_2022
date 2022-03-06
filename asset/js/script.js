@@ -31,6 +31,7 @@ const locationBody = document.querySelector('body').offsetTop;
 
 
 
+
 // window.addEventListener('beforeunload', (event) => {
 // 	event.preventDefault();
 
@@ -88,8 +89,16 @@ for(wli of wrapLineInsert){
 let loopInt = 0;
 const loopDivFrame = document.querySelectorAll('.loopDivFrame');
 // console.log(loopDivFrame);
+const recObj = `<div class="recObj bgb"></div>`;
+
+
+
+
 
 for(let i of loopDivFrame){
+	for (let index = 0; index < 50; index++) {
+		i.innerHTML += recObj;
+	}
 	setInterval(function(){
 	
 		if(loopInt > -50){

@@ -48,7 +48,7 @@ header .headerWrap .logo a{}
 header .headerWrap nav{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 header .headerWrap nav a{
     display: block;
@@ -509,7 +509,9 @@ header .headerWrap nav a:last-child{
 #contact .contactBottomInnerWrap{
     width: 45vw;
 }
-#contact .contactBottomMailBox{}
+#contact .contactBottomMailBox{
+    display: none;
+}
 #contact .contactBottomMailBox .gForm{}
 #contact .contactBottomMailBox fieldset{}
 #contact .contactBottomMailBox fieldset .formList{}
@@ -534,3 +536,21 @@ header .headerWrap nav a:last-child{
 #contact .contactBottomMailBox fieldset .formList .contactBottomInfo .contactBottomInfoLeft .contactBottomInfoLeftBottom > div{
     margin-right: 3vw;
 }
+#contact .contactInfo{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+#contact .contactInfo .contactInfoCont > div{
+    margin-bottom: 2em;
+}
+#contact .contactInfo .contactInfoCont > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .contactInfo .contactInfoCont > div > img{
+    margin-right: 1em;
+}
+
