@@ -76,7 +76,7 @@
 
 @media (min-width : 425px){
     body{
-        font-size: 6px;
+        font-size: 5px;
     }
     section{
         min-height: 576px;
@@ -92,10 +92,7 @@
     #main .mainTitleHead .titleBox{
         width: 70%;
     }
-    #introduce_2 .introBody{
-        justify-content: flex-start;
-    }
-    
+
     
 }
 
@@ -112,6 +109,10 @@
     #contact .contactBottomMailBox{
         display: block;
     }
+    #introduce_2 .introBody{
+        justify-content: flex-start;
+    }
+    
 }
 
 @media (min-width : 1194px){

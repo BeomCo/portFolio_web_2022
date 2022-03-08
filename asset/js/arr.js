@@ -166,7 +166,6 @@ portFolio_responsive.forEach(responsive => {
             </div>
         </div>
     </div>
-    
     `
     
 });
