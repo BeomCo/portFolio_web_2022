@@ -269,8 +269,6 @@ function modifySwiperPort(){
 			});
 		}
 	}
-
-
 }
 
 modifySwiperPort();
@@ -372,33 +370,36 @@ addEventListener('scroll', function(){
 		header.classList.add('bgb');
 		introduce_1.querySelector('.wrap').classList.add('active');
 		// introduce_1.classList.add('bgb')
-
+		headerMouseB();
 		if(scroll >= heightSection_3){
 			headerClassClear();
 			headerAtagCbFunc();
 			// sectionWrapClear();
 			header.classList.add('bgw');
 			introduce_2.querySelector('.wrap').classList.add('active');
+			headerMouseW();
 			// console.log(scroll >= heightSection_3);
-
 			if(scroll >= heightSection_4){
 				headerClassClear();
 				headerAtagCwFunc();
 				// sectionWrapClear();
 				header.classList.add('bgb');
 				portFolio_1.querySelector('.wrap').classList.add('active');
+				headerMouseB();
 				if(scroll >= heightSection_5){
 					headerClassClear();
 					headerAtagCbFunc();
 					// sectionWrapClear();
 					header.classList.add('bgw');
 					portFolio_2.querySelector('.wrap').classList.add('active');
+					headerMouseW();
 					if(scroll >= heightSection_6){
 						headerClassClear();
 						headerAtagCwFunc();
 						// sectionWrapClear();
 						header.classList.add('bgb');
 						contact.querySelector('.wrap').classList.add('active');
+						headerMouseB();
 					}
 				}
 			}
@@ -527,6 +528,60 @@ const swiper = new Swiper(".swiper", {
 
 });
 
+
+
+//a태그 
+const headerMenuMouse = document.querySelectorAll(".navBtn a");
+
+function headerMouseB(){
+	for(let i of headerMenuMouse){
+		i.addEventListener('mouseover', function(){
+			i.style.color = '#F2CD02';
+		});
+		i.addEventListener('mouseout', function(){
+			i.style.color = '#EBEEF7';
+		});
+		i.style.color = '#EBEEF7';
+	}
+}
+headerMouseB();
+function headerMouseW(){
+	for(let i of headerMenuMouse){
+		i.addEventListener('mouseover', function(){
+			i.style.color = '#CE662F';
+		});
+		i.addEventListener('mouseout', function(){
+			i.style.color = '#2D2D2D';
+		});
+		i.style.color = '#2D2D2D';
+	}
+}
+
+const portFolio_2Mouse = document.querySelectorAll('.portFolioMiddleDefault > div');
+const portFolio_2WebMouse = document.querySelectorAll('.portFolioMiddleWrap .link > a');
+
+
+for(let i of portFolio_2Mouse){
+	i.addEventListener('mouseover', function(){
+		i.classList.remove('bgp');
+		i.classList.add('bgo');
+	});
+	i.addEventListener('mouseout', function(){
+		i.classList.remove('bgo');
+		i.classList.add('bgp');
+	});
+}
+for(let i of portFolio_2WebMouse){
+	i.classList.add('bgp');
+	i.addEventListener('mouseover', function(){
+		i.classList.remove('bgp', 'cb');
+		i.classList.add('bgo', 'cw');
+	});
+	i.addEventListener('mouseout', function(){
+		i.classList.remove('bgo', 'cw');
+		i.classList.add('bgp', 'cb');
+	});
+}
 
 
 

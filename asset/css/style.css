@@ -290,6 +290,10 @@ header .headerWrap nav a:last-child{
 }
 #portFolio_1 .portFolioSlideWrapRight .portFolioSlideText .portFolioSlideTextInfo .right a{
     font-size: 3.4em;
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    border-radius: 4px;
 }
 
 #introduce_2 .introHead{}
@@ -453,8 +457,6 @@ header .headerWrap nav a:last-child{
     width: 100%;
     line-height: 2em;
     font-size: 1.6em;
-    color: #212121;
-    background-color: #F2CD02;
     border-radius: 4px;
 
 }
