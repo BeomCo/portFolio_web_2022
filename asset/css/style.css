@@ -317,6 +317,7 @@ header .headerWrap nav a:last-child{
 }
 #introduce_2 .introBody .introBodyCont .notionLink img{
     height: 30em;
+    cursor: pointer;
 }
 
 #introduce_2 .introBottom{
