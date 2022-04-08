@@ -1,7 +1,7 @@
 portFolio_main = [
     {
         title : "traver music",
-        desc : "PHP를 이용하여 DB를 구축하고 음악 서비스를 즐길수 있는 웹을 제작 중 입니다.",
+        desc : "PHP를 이용하여 DB를 구축하고 음악 서비스를 즐길수 있는 웹 서비스를 제작 중 입니다.",
         previewImg : "Traver Music.png",
         link : "https://beomseok.synology.me:7000",
         used : "html, css, js, php",
