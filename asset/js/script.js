@@ -6,6 +6,7 @@ let openingRand = Math.floor(Math.random() * 1501) + 1500;
 // console.log(openingRand);
 let scrollHeight = document.body.scrollHeight;
 
+
 //	현재 스크롤 위치 
 let scroll = window.scrollY;
 const backLine = document.querySelector('.backLine');
@@ -71,6 +72,7 @@ const introduce_2 = document.querySelector('#introduce_2');
 const portFolio_1 = document.querySelector('#portFolio_1');
 const portFolio_2 = document.querySelector('#portFolio_2');
 const contact = document.querySelector('#contact');
+
 
 
 const wrapLineInsert = document.querySelectorAll('.wrapLine');
@@ -254,20 +256,20 @@ function modifySwiperPort(){
 			},
 			
 		});
-		if(offsetWidthLet <= 425){
-			swiperFolio = new Swiper(".swiperFolio", {
-				slidesPerView: 1,
-				// spaceBetween: 200,
-				// slidesPerGroup: 1,
-				// loop: true,
-				// loopFillGroupWithBlank: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
+		// if(offsetWidthLet <= 425){
+		// 	swiperFolio = new Swiper(".swiperFolio", {
+		// 		slidesPerView: 1,
+		// 		spaceBetween: 50,
+		// 		// slidesPerGroup: 1,
+		// 		// loop: true,
+		// 		// loopFillGroupWithBlank: true,
+		// 		pagination: {
+		// 			el: ".swiper-pagination",
+		// 			clickable: true,
+		// 		},
 				
-			});
-		}
+		// 	});
+		// }
 	}
 }
 

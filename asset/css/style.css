@@ -304,7 +304,9 @@ header .headerWrap nav a:last-child{
 }
 
 #introduce_2 .introBody{}
-#introduce_2 .introBody .introBodyCont{}
+#introduce_2 .introBody .introBodyCont{
+    max-height: 250px;
+}
 #introduce_2 .introBody .introBodyCont .txtBox{}
 #introduce_2 .introBody .introBodyCont .notionLink{
     width: 100%;
@@ -317,12 +319,13 @@ header .headerWrap nav a:last-child{
 }
 #introduce_2 .introBody .introBodyCont .notionLink img{
     height: 30em;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #introduce_2 .introBottom{
     transform-origin: 100% 0%;
     /* transform: rotate(270deg); */
+    z-index: -1;
 }
 #introduce_2 .introBottom img{
     height: 35vh;
@@ -429,17 +432,23 @@ header .headerWrap nav a:last-child{
     width: 30em;
     height: 80%;
     border-radius: 4px;
-  
 }
 #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard .portFolioCardImg{
     height: 50%;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
 }
 #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCard .portFolioCardImg img{
     object-fit: cover;
     object-position: 50% 50%;
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
 }
 #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody{
-    height: 25em;
+    height: 40em;
     /* background: rgba(255, 255, 255, 0.8); */
     border-radius: 0 0 4px 4px;
 }
