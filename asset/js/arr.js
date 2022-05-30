@@ -71,14 +71,14 @@ portFolio_responsive = [
     },
     {
         title : "puma",
-        desc : "퓨마 웹",
+        desc : "퓨마 웹페이지를 반응형 으로 구성한 웹",
         previewImg : "PUMA.png",
-        link : "https://beomco.github.io/B-O_web/",
+        link : "https://beomco.github.io/puma_web/",
         used : "html, css, js"
     },
     {
         title : "Origin",
-        desc : "반응형 웹",
+        desc : "Grid를 활용해서 마크업한 반응형 웹",
         previewImg : "Origin.png",
         link : "https://beomco.github.io/origin_web/",
         used : "html, css, js"

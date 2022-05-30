@@ -258,16 +258,7 @@ function modifySwiperPort(){
 		});
 		// if(offsetWidthLet <= 425){
 		// 	swiperFolio = new Swiper(".swiperFolio", {
-		// 		slidesPerView: 1,
-		// 		spaceBetween: 50,
-		// 		// slidesPerGroup: 1,
-		// 		// loop: true,
-		// 		// loopFillGroupWithBlank: true,
-		// 		pagination: {
-		// 			el: ".swiper-pagination",
-		// 			clickable: true,
-		// 		},
-				
+		
 		// 	});
 		// }
 	}

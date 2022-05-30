@@ -448,7 +448,7 @@ header .headerWrap nav a:last-child{
     height: 100%; */
 }
 #portFolio_2 .portFolioMiddle .portFolioMiddleWrap .swiperFolio .swiper-wrapper .swiper-slide .portFolioCardBody{
-    height: 40em;
+    height: 25em;
     /* background: rgba(255, 255, 255, 0.8); */
     border-radius: 0 0 4px 4px;
 }
